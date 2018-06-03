@@ -4,38 +4,38 @@
 gdb -c core_dump_file
 gdb -tui      
 start
-run           " run freely
-(n)ext        " execute next statement
-(b)reak       " <whatever_label_in_the_program>
-q             " quit
-bt            " back trace
+run                   run freely
+(n)ext                execute next statement
+(b)reak               <whatever_label_in_the_program>
+q                     quit
+bt                    back trace
 
-list          " see code
-<C - x a>     " some kind of interface
-<C - l>       " repaint the screen after a print to get rid off the printed message
-<C - x 2>     " two windows: source code and assembly.
-<C - x 2> <C - x 2>  three windows: source dode, assembly and registers
-<C - o>       " to jump between windows in the tui
-tui reg float " execute the previous command and the execute this command to show the float registers
-<C - x 1>     " again one window
-<C - p>       " previous command in the gdb's CLI
-<C - n>       " next command in the gdb's CLI
-p $pc         " print the content of your program counter
-p $sp         " print the content of the stack pointer
-x <memory_address> " get the content of that memory address
-reverse-stepi  " go one step backwards
+list                  see code
+<C - x a>             TUI interface
+<C - l>               repaint the screen after a print to get rid off the printed message
+<C - x 2>             two windows: source code and assembly.
+<C - x 2> <C - x 2>   three windows: source dode, assembly and registers
+<C - o>               to jump between windows in the tui
+tui reg float         execute the previous command and the execute this command to show the float registers
+<C - x 1>             again one window
+<C - p>               previous command in the gdb's CLI
+<C - n>               next command in the gdb's CLI
+p $pc                 print the content of your program counter
+p $sp                 print the content of the stack pointer
+x <memory_address>    get the content of that memory address
+reverse-stepi         go one step backwards
 stepi
-disas          " assembler code
-¿watch <adress>? " watchpoint
+disas                 assembler code
+¿watch <adress>?      watchpoint
 reverse-continue
 ```
 
 There is a Python interpreter built into gdb, so you can type python in the gdb's CLI and star using python right there
 
 ```bash
-python print(gdb.breakpoints())               " Check breakpoints in gbd using the built-in python
+python print(gdb.breakpoints())               Check breakpoints in gbd using the built-in python
 python print(gdb.breakpoints()[0].location)    
-python gdb.Breakpoint('7')                    " Create a breakpoint in the code using the built-in python
+python gdb.Breakpoint('7')                    Create a breakpoint in the code using the built-in python
 ```
 
 This breakpoint might be the last one statement executed in your program (swiss army trick! =)  )
@@ -54,13 +54,13 @@ b _exit.c:32
 breakpoint 3 at 0x7ff...: _exit.c:32
 
 command 2
-record    <= enable recording
+record       enable recording
 continue
 end
 
 command 3
-command_1 <= first  command to be executed when the breakpoint 3 is hit
-command_2 <= second command to be executed when the breakpoint 3 is hit
+command_1   <= first  command to be executed when the breakpoint 3 is hit
+command_2   <= second command to be executed when the breakpoint 3 is hit
 ...
 command_n
 end
