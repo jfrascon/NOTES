@@ -35,7 +35,7 @@ More important commands have a (*) by them.
 *(gdb) break basic.c:101              set breakpoint at file and line (or function)  
 *(gdb) info breakpoints               show breakpoints  
 *(gdb) delete 1                       delete a breakpoint by number  
-(gdb) delete        	                delete all breakpoints (prompted)  
+(gdb) delete                          delete all breakpoints (prompted)  
 (gdb) clear                           delete breakpoints at current line  
 (gdb) clear function                  delete breakpoints at function  
 (gdb) clear line                      delete breakpoints at line  
