@@ -7,14 +7,17 @@ More important commands have a (*) by them.
 
 ### Startup 
 
+```
 *% gdb -help        print startup help, show switches  
 *% gdb object       normal debug   
 % gdb object core   core debug (must specify core file)  
 % gdb object pid    attach to running process  
 % gdb               use file command to load object   
+```
 
 ### Help
 
+```
 *(gdb) help               list command classes  
 (gdb) help running        list commands in one command class  
 (gdb) help run            bottom-level help for a command "run"   
@@ -22,9 +25,11 @@ More important commands have a (*) by them.
 (gdb) help info line      help for a particular info command  
 (gdb) help show           list show commands (gdb state)  
 (gdb) help show commands  specific help for a show command  
+```
 
 ### Breakpoints
 
+```
 *(gdb) break main                     set a breakpoint on a function  
 *(gdb) break 101                      set a breakpoint on a line number  
 *(gdb) break basic.c:101              set breakpoint at file and line (or function)  
@@ -43,6 +48,7 @@ More important commands have a (*) by them.
 (gdb) condition 2 i == 20             example: break on breakpoint 2 if i equals 20  
 (gdb) watch expression                set software watchpoint on variable  
 (gdb) info watchpoints                show current watchpoints  
+```
 
 ### Running the program
 
