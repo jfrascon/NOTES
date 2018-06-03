@@ -131,11 +131,11 @@ More important commands have a (*) by them.
 ### Object File manipulation
 
 ```
-(gdb) file object      		 load new file for debug (sym+exec)  
-(gdb) file             		 discard sym+exec file info   
+(gdb) file object          load new file for debug (sym+exec)  
+(gdb) file                 discard sym+exec file info   
 (gdb) symbol-file object   load only symbol table   
-(gdb) exec-file object 		 specify object to run (not sym-file)   
-(gdb) core-file core   		 post-mortem debugging   
+(gdb) exec-file object     specify object to run (not sym-file)   
+(gdb) core-file core       post-mortem debugging   
 ```
 
 ### Signal Control
@@ -149,8 +149,8 @@ More important commands have a (*) by them.
 (gdb) handle INT nostop      don't stop program  
 (gdb) handle INT pass        allow program to receive signal  
 (gdb) handle INT nopass      debugger catches signal; program doesn't   
-(gdb) signal signo        	 continue and send signal to program   
-(gdb) signal 0        		   continue and send no signal to program   
+(gdb) signal signo           continue and send signal to program   
+(gdb) signal 0               continue and send no signal to program   
 ```
 
 ### Machine-level Debug
@@ -158,39 +158,39 @@ More important commands have a (*) by them.
 ```
 (gdb) info registers       print registers sans floats  
 (gdb) info all-registers   print all registers  
-(gdb) print/x $pc        	 print one register   
-(gdb) stepi        		     single step at machine level   
-(gdb) si        		       single step at machine level   
-(gdb) nexti        		     single step (over functions) at machine level   
-(gdb) ni        		       single step (over functions) at machine level   
+(gdb) print/x $pc          print one register   
+(gdb) stepi                single step at machine level   
+(gdb) si                   single step at machine level   
+(gdb) nexti                single step (over functions) at machine level   
+(gdb) ni                   single step (over functions) at machine level   
 (gdb) display/i $pc        print current instruction in display   
-(gdb) x/x &gx        		   print variable gx in hex   
+(gdb) x/x &gx              print variable gx in hex   
 (gdb) info line 22         print addresses for object code for line 22   
 (gdb) info line *0x2c4e    print line number of object code at address   
-(gdb) x/10i main        	 disassemble first 10 instructions in `main`  
+(gdb) x/10i main           disassemble first 10 instructions in `main`  
 (gdb) disassemble addr     dissassemble code for function around addr   
 ```
 
 ### History Display
 
 ```
-(gdb) show commands        	     print command history (>= gdb 4.0)  
-(gdb) info editing       	       print command history (gdb 3.5)  
-(gdb) ESC-CTRL-J        	       switch to vi edit mode from emacs edit mode   
+(gdb) show commands              print command history (>= gdb 4.0)  
+(gdb) info editing               print command history (gdb 3.5)  
+(gdb) ESC-CTRL-J                 switch to vi edit mode from emacs edit mode   
 (gdb) set history expansion on   turn on c-shell like history  
 (gdb) break class::member        set breakpoint on class member. may get menu  
 (gdb) list class::member         list member in class  
 (gdb) ptype class                print class members    
-(gdb) print *this        	       print contents of this pointer   
-(gdb) rbreak regexpr     	       useful for breakpoint on overloaded member name  
+(gdb) print *this                print contents of this pointer   
+(gdb) rbreak regexpr             useful for breakpoint on overloaded member name  
 ```
 
 ### Miscellaneous
 
 ```
-(gdb) define command ... end   define user command    
-*(gdb) RETURN        		       repeat last command   
-*(gdb) shell command args      execute shell command    
-*(gdb) source file        	   load gdb commands from file   
-*(gdb) quit        		         quit gdb   
+(gdb) define command ... end define user command    
+*(gdb) RETURN                repeat last command   
+*(gdb) shell command args    execute shell command    
+*(gdb) source file           load gdb commands from file   
+*(gdb) quit                  quit gdb   
 ```
