@@ -188,7 +188,7 @@ More important commands have a (*) by them.
 ### Miscellaneous
 
 ```
- (gdb) define command ... end   define user command    
+ (gdb) define command ... end  define user command    
 *(gdb) RETURN                  repeat last command   
 *(gdb) shell command args      execute shell command    
 *(gdb) source file             load gdb commands from file   
