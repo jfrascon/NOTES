@@ -8,10 +8,10 @@ More important commands have a (*) by them.
 ### Startup 
 
 *% gdb -help        print startup help, show switches  
-*% gdb object      	normal debug   
-% gdb object core 	core debug (must specify core file)  
-% gdb object pid  	attach to running process  
-% gdb        		    use file command to load object   
+*% gdb object       normal debug   
+% gdb object core   core debug (must specify core file)  
+% gdb object pid    attach to running process  
+% gdb               use file command to load object   
 
 ### Help
 
