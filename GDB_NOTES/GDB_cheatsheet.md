@@ -18,13 +18,13 @@ More important commands have a (*) by them.
 ### Help
 
 ```
-*(gdb) help               list command classes  
-(gdb) help running        list commands in one command class  
-(gdb) help run            bottom-level help for a command "run"   
-(gdb) help info           list info commands (running program state)  
-(gdb) help info line      help for a particular info command  
-(gdb) help show           list show commands (gdb state)  
-(gdb) help show commands  specific help for a show command  
+*(gdb) help                list command classes  
+(gdb) help running         list commands in one command class  
+(gdb) help run             bottom-level help for a command "run"   
+(gdb) help info            list info commands (running program state)  
+(gdb) help info line       help for a particular info command  
+(gdb) help show            list show commands (gdb state)  
+(gdb) help show commands   specific help for a show command  
 ```
 
 ### Breakpoints
@@ -53,7 +53,7 @@ More important commands have a (*) by them.
 ### Running the program
 
 ```
-*(gdb) run        	          run the program with current arguments  
+*(gdb) run                    run the program with current arguments  
 *(gdb) run args redirection   run with args and redirection  
 (gdb) set args args...        set arguments for run   
 (gdb) show args               show current arguments to run  
@@ -72,10 +72,10 @@ More important commands have a (*) by them.
 ### Stack backtrace
 
 ```
-*(gdb) bt        	   print stack backtrace  
-(gdb) frame        	 show current execution position  
-(gdb) up        	   move up stack trace  (towards main)  
-(gdb) down        	 move down stack trace (away from main)   
+*(gdb) bt            print stack backtrace  
+(gdb) frame          show current execution position  
+(gdb) up             move up stack trace  (towards main)  
+(gdb) down           move down stack trace (away from main)   
 *(gdb) info locals   print automatic variables in frame  
 (gdb) info args      print function parameters   
 ```
