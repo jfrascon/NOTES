@@ -52,6 +52,7 @@ More important commands have a (*) by them.
 
 ### Running the program
 
+```
 *(gdb) run        	          run the program with current arguments  
 *(gdb) run args redirection   run with args and redirection  
 (gdb) set args args...        set arguments for run   
@@ -66,18 +67,22 @@ More important commands have a (*) by them.
 *(gdb) detach                 detach from running program  
 *(gdb) finish                 finish current function's execution  
 (gdb) kill                    kill current executing program   
+```
 
 ### Stack backtrace
 
+```
 *(gdb) bt        	   print stack backtrace  
 (gdb) frame        	 show current execution position  
 (gdb) up        	   move up stack trace  (towards main)  
 (gdb) down        	 move down stack trace (away from main)   
 *(gdb) info locals   print automatic variables in frame  
 (gdb) info args      print function parameters   
+```
 
 ### Browsing source
 
+```
 *(gdb) list 101        	       list 10 lines around line 101  
 *(gdb) list 1,10               list lines 1 to 10  
 *(gdb) list main  	           list lines around function   
@@ -91,9 +96,11 @@ More important commands have a (*) by them.
 (gdb) dir dirname              add directory to source path  
 (gdb) dir        	             reset source path to nothing  
 (gdb) show directories         show source path  
+```
 
 ### Browsing Data
 
+```
 *(gdb) print expression            print expression, added to value history  
 *(gdb) print/x expressionR         print in hex  
 (gdb) print array[i]@count         artificial array - print array range  
@@ -119,17 +126,21 @@ More important commands have a (*) by them.
 (gdb) info display                 show displays   
 (gdb) show values                  print value history (>= gdb 4.0)   
 (gdb) info history                 print value history (gdb 3.5)   
+```
 
 ### Object File manipulation
 
+```
 (gdb) file object      		 load new file for debug (sym+exec)  
 (gdb) file             		 discard sym+exec file info   
 (gdb) symbol-file object   load only symbol table   
 (gdb) exec-file object 		 specify object to run (not sym-file)   
 (gdb) core-file core   		 post-mortem debugging   
+```
 
 ### Signal Control
 
+```
 (gdb) info signals        	 print signal setup   
 (gdb) handle signo actions   set debugger actions for signal   
 (gdb) handle INT print       print message when signal occurs   
@@ -140,8 +151,11 @@ More important commands have a (*) by them.
 (gdb) handle INT nopass      debugger catches signal; program doesn't   
 (gdb) signal signo        	 continue and send signal to program   
 (gdb) signal 0        		   continue and send no signal to program   
+```
 
 ### Machine-level Debug
+
+```
 (gdb) info registers       print registers sans floats  
 (gdb) info all-registers   print all registers  
 (gdb) print/x $pc        	 print one register   
@@ -155,9 +169,11 @@ More important commands have a (*) by them.
 (gdb) info line *0x2c4e    print line number of object code at address   
 (gdb) x/10i main        	 disassemble first 10 instructions in `main`  
 (gdb) disassemble addr     dissassemble code for function around addr   
+```
 
 ### History Display
 
+```
 (gdb) show commands        	     print command history (>= gdb 4.0)  
 (gdb) info editing       	       print command history (gdb 3.5)  
 (gdb) ESC-CTRL-J        	       switch to vi edit mode from emacs edit mode   
@@ -167,11 +183,14 @@ More important commands have a (*) by them.
 (gdb) ptype class                print class members    
 (gdb) print *this        	       print contents of this pointer   
 (gdb) rbreak regexpr     	       useful for breakpoint on overloaded member name  
+```
 
 ### Miscellaneous
 
+```
 (gdb) define command ... end   define user command    
 *(gdb) RETURN        		       repeat last command   
 *(gdb) shell command args      execute shell command    
 *(gdb) source file        	   load gdb commands from file   
 *(gdb) quit        		         quit gdb   
+```
