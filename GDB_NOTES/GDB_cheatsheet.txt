@@ -15,9 +15,9 @@ More important commands have a (*) by them.
 
 ### Help
 
-*(gdb) help        	      list command classes  
+*(gdb) help               list command classes  
 (gdb) help running        list commands in one command class  
-(gdb) help run        	  bottom-level help for a command "run"   
+(gdb) help run            bottom-level help for a command "run"   
 (gdb) help info           list info commands (running program state)  
 (gdb) help info line      help for a particular info command  
 (gdb) help show           list show commands (gdb state)  
