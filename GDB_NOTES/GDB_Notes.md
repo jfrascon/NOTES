@@ -1,6 +1,6 @@
 # GDB NOTES
 
-```bash
+```
 gdb -c core_dump_file
 gdb -tui      
 start
