@@ -85,16 +85,16 @@ More important commands have a (*) by them.
 ```
 *(gdb) list 101        	       list 10 lines around line 101  
 *(gdb) list 1,10               list lines 1 to 10  
-*(gdb) list main  	           list lines around function   
+*(gdb) list main               list lines around function   
 *(gdb) list basic.c:main       list from another file basic.c  
-*(gdb) list -        	         list previous 10 lines  
+*(gdb) list -                  list previous 10 lines  
 (gdb) list *0x22e4             list source at address  
-(gdb) cd dir        	         change current directory to \fIdir\fR  
-(gdb) pwd          	           print working directory  
+(gdb) cd dir                   change current directory to \fIdir\fR  
+(gdb) pwd                      print working directory  
 (gdb) search regexpr           forward current for regular expression  
 (gdb) reverse-search regexpr   backward search for regular expression  
 (gdb) dir dirname              add directory to source path  
-(gdb) dir        	             reset source path to nothing  
+(gdb) dir                      reset source path to nothing  
 (gdb) show directories         show source path  
 ```
 
@@ -104,17 +104,17 @@ More important commands have a (*) by them.
 *(gdb) print expression            print expression, added to value history  
 *(gdb) print/x expressionR         print in hex  
 (gdb) print array[i]@count         artificial array - print array range  
-(gdb) print $        	             print last value  
+(gdb) print $                      print last value  
 (gdb) print *$->next               print thru list  
 (gdb) print $1        	           print value 1 from value history  
 (gdb) print ::gx                   force scope to be global  
 (gdb) print 'basic.c'::gx          global scope in named file (>=4.6)  
 (gdb) print/x &main                print address of function   
 (gdb) x/countFormatSize address    low-level examine command  
-(gdb) x/x &gx        	             print gx in hex   
+(gdb) x/x &gx                      print gx in hex   
 (gdb) x/4wx &main                  print 4 longs at start of \fImain\fR in hex   
 (gdb) x/gf &gd1                    print double  
-(gdb) help x        	             show formats for x   
+(gdb) help x                       show formats for x   
 *(gdb) info locals                 print local automatics only   
 (gdb) info functions regexp        print function names   
 (gdb) info variables  regexp       print global variable names   
@@ -141,7 +141,7 @@ More important commands have a (*) by them.
 ### Signal Control
 
 ```
-(gdb) info signals        	 print signal setup   
+(gdb) info signals           print signal setup   
 (gdb) handle signo actions   set debugger actions for signal   
 (gdb) handle INT print       print message when signal occurs   
 (gdb) handle INT noprint     don't print message  
