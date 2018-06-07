@@ -124,6 +124,8 @@ Si utilizamos una función reservada `locals()` obtendremos un diccionario con t
 
 ## GENERATORS
 
+A generator is an object that contains the logic to provide elements on the fly. It serves the element as it is requested.
+
 ```python
 def square_numbers(nums):
     for i in nums:
