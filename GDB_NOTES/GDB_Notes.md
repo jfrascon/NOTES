@@ -1,5 +1,10 @@
 # GDB NOTES
 
+## INTERESTING REFS
+
+[http://apoorvaj.io/hitchhikers-guide-to-the-gdb.html](Hitchhikers guied to the GDB)
+[https://sourceware.org/gdb/onlinedocs/gdb/Server.html](Debugging with GDBServer)
+
 ```
 gdb -c core_dump_file
 gdb -tui      
