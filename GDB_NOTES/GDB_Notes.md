@@ -5,6 +5,7 @@
 [Hitchhikers guied to the GDB](http://apoorvaj.io/hitchhikers-guide-to-the-gdb.html)  
 [Debugging with GDBServer](https://sourceware.org/gdb/onlinedocs/gdb/Server.html)
 
+## NOTES
 ```
 gdb -c core_dump_file
 gdb -tui      
@@ -73,7 +74,7 @@ end
 set pagination off <= the speaker at the conference on youtube said that he turned this off because it could be annoying
 ```
 
-## [SKIP INSTRUCTIONS](http://www.toptip.ca/2010/06/gdb-skip-instructions-or-lines-while.html)
+### [SKIP INSTRUCTIONS](http://www.toptip.ca/2010/06/gdb-skip-instructions-or-lines-while.html)
 
 Supposed you are at line 50 and you want to skip the following several lines of your source code and continue from line 60, you can input command
 
