@@ -2,7 +2,7 @@
 
 ## INTERESTING REFS
 
-[Hitchhikers guied to the GDB](http://apoorvaj.io/hitchhikers-guide-to-the-gdb.html)
+[Hitchhikers guied to the GDB](http://apoorvaj.io/hitchhikers-guide-to-the-gdb.html)  
 [Debugging with GDBServer](https://sourceware.org/gdb/onlinedocs/gdb/Server.html)
 
 ```
