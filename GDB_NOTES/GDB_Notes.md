@@ -2,8 +2,8 @@
 
 ## INTERESTING REFS
 
-[http://apoorvaj.io/hitchhikers-guide-to-the-gdb.html](Hitchhikers guied to the GDB)
-[https://sourceware.org/gdb/onlinedocs/gdb/Server.html](Debugging with GDBServer)
+[Hitchhikers guied to the GDB](http://apoorvaj.io/hitchhikers-guide-to-the-gdb.html)
+[Debugging with GDBServer](https://sourceware.org/gdb/onlinedocs/gdb/Server.html)
 
 ```
 gdb -c core_dump_file
